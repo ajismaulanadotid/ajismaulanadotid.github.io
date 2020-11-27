@@ -9,11 +9,6 @@ $(document).ready(function () {
     }
   });
 
-  // AOS
-  $(window).on("load", function () {
-    AOS.init();
-  });
-
   // Form submit
   $("#contact-form").submit(function (e) {
     e.preventDefault();

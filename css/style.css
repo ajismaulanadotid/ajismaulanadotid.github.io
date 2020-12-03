@@ -342,6 +342,24 @@ body {
   font-size: 0.625rem;
 }
 
+/* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f39c12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.preloader svg {
+  width: 100px;
+}
+
 /* **MEDIA QUERIES** */
 
 /* *TABLET* */

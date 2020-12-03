@@ -1,3 +1,8 @@
+// Preloader fadeout
+$(window).on("load", function () {
+  $(".preloader").fadeOut("slow");
+});
+
 $(document).ready(function () {
   // Fixed navbar on scroll
   $(window).scroll(function () {

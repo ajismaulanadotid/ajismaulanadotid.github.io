@@ -127,7 +127,7 @@ body {
 }
 
 .about__image svg {
-  width: 400px;
+  width: 325px;
 }
 
 .about__content {
@@ -347,6 +347,10 @@ body {
 /* *TABLET* */
 @media (min-width: 768px) {
   /* Hero */
+  .hero__content {
+    margin-bottom: 0;
+  }
+
   .hero__content h2 {
     font-size: 2rem;
   }

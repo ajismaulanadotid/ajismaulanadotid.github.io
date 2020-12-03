@@ -9,6 +9,11 @@ $(document).ready(function () {
     }
   });
 
+  // Navbar collpase when link cliked
+  $(".navbar-collapse a").click(function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
   // Form submit
   $("#contact-form").submit(function (e) {
     e.preventDefault();

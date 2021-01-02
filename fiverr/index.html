@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ajis Mualana Fiverr</title>
+    <title>< am /> | Fiverr</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
     <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
       body {
         font-family: "Poppins", sans-serif;
         overflow: hidden;
+        font-weight: 400;
       }
       section {
         min-height: 100vh;
@@ -20,12 +26,49 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        margin-bottom: 1rem;
+        position: relative;
+      }
+      div::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 3px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        border-top: 3px solid #00b22d;
+        animation: 1s spin ease-in-out infinite;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
       }
     </style>
   </head>
   <body>
     <section>
-      <h1>You will be directed ...</h1>
+      <div><p>< am /></p></div>
+      <h4>You will be directed ...</h4>
     </section>
     <script>
       window.onload = () => {

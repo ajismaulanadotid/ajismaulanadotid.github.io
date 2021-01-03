@@ -6,6 +6,7 @@ body {
   line-height: 1.6;
 }
 
+/* Utils Class */
 .w-80 {
   width: 80% !important;
 }
@@ -14,24 +15,46 @@ body {
   font-weight: 600 !important;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+/* Buttons */
 .btn {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
+  border-radius: 0;
+  padding: 14px 28px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
 
 .btn--primary {
   background-color: #000;
   border-radius: 0;
-  padding: 16px 30px;
+}
+
+.btn--primary:hover {
+  color: #fff;
 }
 
 .btn--secondary {
   color: #000;
   background-color: transparent;
-  margin-left: 30px;
+  margin-left: 20px;
+  border: 1px solid #000;
 }
 
+/* Get CV Animation */
 .get-cv span {
   display: inline-block;
 }
@@ -68,6 +91,7 @@ body {
   }
 }
 
+/* Wave Hand Animation */
 .wave-hand {
   animation-name: wave-hand;
   animation-duration: 2.5s;
@@ -103,30 +127,90 @@ body {
   }
 }
 
+/* Navbar */
 .navbar-brand {
-  font-size: 32px;
-  letter-spacing: 0.2em;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .nav-link {
-  font-size: 18px;
   line-height: 0;
   font-weight: 400;
   color: #000 !important;
 }
 
+/* Hero */
+.hero {
+  padding: 20px 0;
+}
+.hero__content {
+  text-align: left;
+}
+
 .hero__content h3 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
 }
 
 .hero__content h1 {
-  font-size: 64px;
+  font-size: 58px;
   font-weight: 600;
+}
+
+.hero__content p {
+  width: 80%;
+}
+
+.hero__image {
+  text-align: right;
 }
 
 .hero__image svg {
   transform: scaleX(-1);
   height: 500px;
+}
+
+@media (max-width: 991.98px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .btn--secondary {
+    margin-left: 10px;
+  }
+
+  .hero__content h3 {
+    font-size: 36px;
+  }
+
+  .hero__content h1 {
+    font-size: 42px;
+  }
+
+  .hero__content p {
+    width: 100%;
+  }
+
+  .hero__image svg {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero__content {
+    order: 2;
+    text-align: center;
+  }
+
+  .hero__image {
+    order: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn--primary {
+    margin-bottom: 10px;
+  }
 }

@@ -209,7 +209,7 @@ body {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 375px) {
   .btn--primary {
     margin-bottom: 10px;
   }

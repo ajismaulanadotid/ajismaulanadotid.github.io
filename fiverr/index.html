@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <title>Redirect to Fiverr...</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow: hidden;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+      }
+      .logo {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+      .logo::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: 5px solid rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        border-top-color: #00b22d;
+        animation: spin 1s ease-in-out infinite;
+      }
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .link {
+        text-decoration: none;
+        color: #00b22d;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="Logo" />
+      </div>
+      <h3>You will be directed automatically ➡️</h3>
+      <p>
+        Not automatically redirected 🤔
+        <a href="https://www.fiverr.com/ajismaulana_" class="link"
+          >Click here</a
+        >
+      </p>
+    </section>
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+          window.location.href = "https://www.fiverr.com/ajismaulana_";
+        }, 2000);
+      };
+    </script>
+  </body>
+</html>

@@ -15,10 +15,6 @@ body {
   font-weight: 600 !important;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 /* Buttons */
 .btn {
   font-size: 18px;
@@ -54,17 +50,29 @@ body {
   border: 1px solid #000;
 }
 
+/* Navbar */
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.nav-link {
+  line-height: 0;
+  font-weight: 400;
+  color: #000 !important;
+}
+
 /* Get CV Animation */
 .get-cv span {
   display: inline-block;
 }
 
 .get-cv:hover span {
-  animation: wave 1.5s linear infinite;
-  transform-origin: 50% 30%;
+  animation: wiggle 1.5s linear infinite;
+  transform-origin: center;
 }
 
-@keyframes wave {
+@keyframes wiggle {
   0% {
     transform: rotate(0deg);
   }
@@ -89,6 +97,19 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+
+/* Hero */
+.hero {
+  padding-bottom: 30px;
+}
+.hero__content {
+  text-align: left;
+}
+
+.hero__content h3 {
+  font-size: 42px;
+  font-weight: 600;
 }
 
 /* Wave Hand Animation */
@@ -127,31 +148,6 @@ body {
   }
 }
 
-/* Navbar */
-.navbar-brand {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.nav-link {
-  line-height: 0;
-  font-weight: 400;
-  color: #000 !important;
-}
-
-/* Hero */
-.hero {
-  padding-bottom: 30px;
-}
-.hero__content {
-  text-align: left;
-}
-
-.hero__content h3 {
-  font-size: 42px;
-  font-weight: 600;
-}
-
 .hero__content h1 {
   font-size: 58px;
   font-weight: 600;
@@ -161,13 +157,41 @@ body {
   width: 80%;
 }
 
+.content {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .hero__image {
   text-align: right;
+  position: relative;
+}
+
+.my-work {
+  position: absolute;
+  top: 43%;
+  left: 64px;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.my-work:hover {
+  color: #000;
+  text-decoration: none;
+  animation: wiggle 1.5s linear infinite;
 }
 
 .hero__image svg {
   transform: scaleX(-1);
   height: 500px;
+}
+
+@media (max-width: 1199.98px) {
+  .my-work {
+    top: 44%;
+    left: -13px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -195,6 +219,11 @@ body {
   .hero__image svg {
     height: 400px;
   }
+
+  .my-work {
+    top: 41.5%;
+    left: -10px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -207,10 +236,27 @@ body {
     order: 1;
     text-align: center;
   }
+
+  .my-work {
+    top: 43%;
+    left: 17%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .my-work {
+    top: 42%;
+    left: 19%;
+  }
 }
 
 @media (max-width: 375px) {
   .btn--primary {
     margin-bottom: 10px;
+  }
+
+  .my-work {
+    top: 41%;
+    left: 8%;
   }
 }

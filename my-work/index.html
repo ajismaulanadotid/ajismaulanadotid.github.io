@@ -32,7 +32,6 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <title>My Work 💼</title>
@@ -67,40 +66,33 @@
         <div class="row">
           <div class="col-12">
             <h4>List of all my completed work ✅</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              at?
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-3">
-            <ul class="nav nav-pills" role="tablist">
-              <li class="nav-item">
-                <a
-                  href="#website"
-                  class="nav-link active"
-                  id="website-tab"
-                  data-toggle="pill"
-                  role="tab"
-                  aria-controls="website"
-                  >💻 Website</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#animation"
-                  class="nav-link"
-                  id="animation-tab"
-                  data-toggle="pill"
-                  role="tab"
-                  aria-controls="animation"
-                  >🎬 Video Animation</a
-                >
-              </li>
-            </ul>
+          <div class="col-md-3">
+            <div class="nav nav-pills flex-column" role="tablist">
+              <a
+                href="#website"
+                class="nav-link active"
+                id="website-tab"
+                data-toggle="pill"
+                role="tab"
+                aria-controls="website"
+                >💻 <span class="d-inline-block">Website</span></a
+              >
+              <a
+                href="#animation"
+                class="nav-link"
+                id="animation-tab"
+                data-toggle="pill"
+                role="tab"
+                aria-controls="animation"
+                >🎬 <span class="d-inline-block">Video Animation</span></a
+              >
+            </div>
           </div>
-          <div class="col-9">
+          <div class="col-md-9">
             <div class="tab-content">
               <div
                 class="tab-pane fade show active"
@@ -108,49 +100,50 @@
                 role="tabpanel"
                 aria-labelledby="website-tab"
               >
-                <div class="row">
-                  <div class="col-4">
-                    <div class="card">
-                      <img
-                        src="https://source.unsplash.com/random/300x200"
-                        class="card-img-top text-center"
-                        alt="..."
-                      />
+                <div class="row no-gutters">
+                  <div class="col-10 col-md-6 col-lg-5 px-2 mb-3">
+                    <div class="card h-100">
+                      <div class="card-image">
+                        <img
+                          src="/assets/web.jpg"
+                          class="card-img-top text-center"
+                          alt="..."
+                        />
+                      </div>
                       <div class="card-body">
-                        <h5 class="card-title">My Website</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-title">Portfolio v1</h5>
+                        <p class="card-text">My fisrt portfolio website</p>
+                      </div>
+                      <div class="py-3 px-4">
+                        <a
+                          href="https://ajismaulanadotid.github.io/portfolio-v1/"
+                          target="_blank"
+                          class="card-link"
+                          >Live View 👈</a
+                        >
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
-                    <div class="card">
-                      <img
-                        src="https://source.unsplash.com/random/300x200"
-                        class="card-img-top text-center"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">My Website</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                  <div class="col-10 col-md-6 col-lg-5 px-2 mb-3">
+                    <div class="card h-100">
+                      <div class="card-image">
+                        <img
+                          src="/assets/web.jpg"
+                          class="card-img-top text-center"
+                          alt="..."
+                        />
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card">
-                      <img
-                        src="https://source.unsplash.com/random/300x200"
-                        class="card-img-top text-center"
-                        alt="..."
-                      />
                       <div class="card-body">
-                        <h5 class="card-title">My Website</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-title">Find Lyrics</h5>
+                        <p class="card-text">Search your favorit song lyric</p>
+                      </div>
+                      <div class="py-3 px-4">
+                        <a
+                          href="https://ajismaulanadotid.github.io/find-lyrics/"
+                          target="_blank"
+                          class="card-link"
+                          >Live View 👈</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -162,15 +155,53 @@
                 role="tabpanel"
                 aria-labelledby="animation-tab"
               >
-                <div class="row">
-                  <div class="col-6">
-                    <div class="plyr__video-embed" id="player">
-                      <iframe
-                        src="https://www.youtube.com/embed/F1N1klw81f4"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
+                <div class="row no-gutters">
+                  <div class="col-12 col-lg-6 px-2 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer posuere erat a ante.
+                          </p>
+                          <footer class="blockquote-footer">
+                            Someone famous in
+                            <cite title="Source Title">Source Title</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 px-2 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer posuere erat a ante.
+                          </p>
+                          <footer class="blockquote-footer">
+                            Someone famous in
+                            <cite title="Source Title">Source Title</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 px-2 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer posuere erat a ante.
+                          </p>
+                          <footer class="blockquote-footer">
+                            Someone famous in
+                            <cite title="Source Title">Source Title</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -192,9 +223,5 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
-    <script>
-      const player = new Plyr("#player");
-    </script>
   </body>
 </html>

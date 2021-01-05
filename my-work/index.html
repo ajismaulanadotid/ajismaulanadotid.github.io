@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h4>List of all my completed work ✅</h4>
+            <h2>List of all my completed work ✅</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -90,6 +90,15 @@
                 aria-controls="animation"
                 >🎬 <span class="d-inline-block">Video Animation</span></a
               >
+              <a
+                href="#photo"
+                class="nav-link"
+                id="photo-tab"
+                data-toggle="pill"
+                role="tab"
+                aria-controls="photo"
+                >📷 <span class="d-inline-block">Photo Gallery</span></a
+              >
             </div>
           </div>
           <div class="col-md-9">
@@ -101,17 +110,20 @@
                 aria-labelledby="website-tab"
               >
                 <div class="row no-gutters">
-                  <div class="col-10 col-md-6 col-lg-5 px-2 mb-3">
+                  <div class="col-12 col-sm-10 col-md-6 col-lg-5 px-2 mb-3">
                     <div class="card h-100">
                       <div class="card-image">
                         <img
-                          src="/assets/web.jpg"
+                          src="/assets/web.jpg "
                           class="card-img-top text-center"
                           alt="..."
                         />
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title">Portfolio v1</h5>
+                        <h5 class="card-title mb-1">Portfolio v1</h5>
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-bootstrap">Bootstrap</span>
                         <p class="card-text">My fisrt portfolio website</p>
                       </div>
                       <div class="py-3 px-4">
@@ -121,10 +133,16 @@
                           class="card-link"
                           >Live View 👈</a
                         >
+                        <a
+                          href="https://github.com/ajismaulanadotid/portfolio-v1"
+                          target="_blank"
+                          class="card-link"
+                          >Github 📁</a
+                        >
                       </div>
                     </div>
                   </div>
-                  <div class="col-10 col-md-6 col-lg-5 px-2 mb-3">
+                  <div class="col-12 col-sm-10 col-md-6 col-lg-5 px-2 mb-3">
                     <div class="card h-100">
                       <div class="card-image">
                         <img
@@ -134,7 +152,8 @@
                         />
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title">Find Lyrics</h5>
+                        <h5 class="card-title mb-1">Find Lyrics</h5>
+                        <span class="badge badge-js">JS</span>
                         <p class="card-text">Search your favorit song lyric</p>
                       </div>
                       <div class="py-3 px-4">
@@ -143,6 +162,12 @@
                           target="_blank"
                           class="card-link"
                           >Live View 👈</a
+                        >
+                        <a
+                          href="https://github.com/ajismaulanadotid/find-lyrics"
+                          target="_blank"
+                          class="card-link"
+                          >Github 📁</a
                         >
                       </div>
                     </div>
@@ -157,52 +182,103 @@
               >
                 <div class="row no-gutters">
                   <div class="col-12 col-lg-6 px-2 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer posuere erat a ante.
-                          </p>
-                          <footer class="blockquote-footer">
-                            Someone famous in
-                            <cite title="Source Title">Source Title</cite>
-                          </footer>
-                        </blockquote>
+                    <div class="card card-video h-100 text-white">
+                      <img
+                        src="/assets/video-animation.png"
+                        class="card-img"
+                        alt="..."
+                      />
+                      <div class="card-img-overlay">
+                        <h5 class="card-title mb-1">My CV</h5>
+                        <span class="badge badge-primary">Whiteboard</span>
+                        <p class="card-text my-1">
+                          Whiteboard Animation Fiverr
+                        </p>
+                        <a
+                          href="https://youtu.be/F1N1klw81f4"
+                          class="btn btn--youtube"
+                          target="_blank"
+                          >View on YT</a
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-lg-6 px-2 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer posuere erat a ante.
-                          </p>
-                          <footer class="blockquote-footer">
-                            Someone famous in
-                            <cite title="Source Title">Source Title</cite>
-                          </footer>
-                        </blockquote>
+                    <div class="card card-video h-100 text-white">
+                      <img
+                        src="/assets/video-animation.png"
+                        class="card-img"
+                        alt="..."
+                      />
+                      <div class="card-img-overlay">
+                        <h5 class="card-title mb-1">Lorem</h5>
+                        <span class="badge badge-success">Motion Graphic</span>
+                        <p class="card-text my-1">
+                          Lorem ipsum dolor sit amet.
+                        </p>
+                        <a href="#" class="btn btn--youtube">View on YT</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-6 px-2 mb-3">
-                    <div class="card">
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer posuere erat a ante.
-                          </p>
-                          <footer class="blockquote-footer">
-                            Someone famous in
-                            <cite title="Source Title">Source Title</cite>
-                          </footer>
-                        </blockquote>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="photo"
+                role="tabpanel"
+                aria-labelledby="photo-tab"
+              >
+                <div class="img-grid">
+                  <div class="img-item">
+                    <img src="https://picsum.photos/500?random=1" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/300/400?random=1" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/300/200?random=1" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/300/400?random=2" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/500?random=2" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/300/200?random=2" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/400" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/600/400" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/350/500" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/600" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/500/300" />
+                  </div>
+                  <div class="img-item">
+                    <img src="https://picsum.photos/300/200" />
+                  </div>
+                </div>
+                <div class="row no-gutters py-3">
+                  <div class="col-12">
+                    <p class="text-center">
+                      Random Photo by
+                      <a href="https://picsum.photos/" target="_blank"
+                        >Lorem Picsum</a
+                      >
+                      from
+                      <a href="https://unsplash.com/" target="_blank"
+                        >Unsplash</a
+                      >
+                      ❤️
+                    </p>
                   </div>
                 </div>
               </div>
